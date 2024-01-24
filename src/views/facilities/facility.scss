@@ -1,0 +1,41 @@
+$primary-color: #14274a;
+$white-color: #fff;
+.facility {
+  max-width: 700px;
+  margin: 3% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  .image {
+    width: 100%;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: calc(100% - 74px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #00000065;
+    }
+    .caption {
+      max-width: 500px;
+      background-color: $white-color;
+      color: $primary-color;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px 0;
+      margin: auto;
+      position: relative;
+      z-index: 99999;
+      top: -70px;
+      @media (max-width: 768px) {
+        max-width: 200px;
+        font-size: 21px;
+        top: -58px;
+      }
+    }
+  }
+}

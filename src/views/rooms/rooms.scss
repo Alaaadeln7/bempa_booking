@@ -1,0 +1,53 @@
+$primary-color: #14274a;
+
+.rooms {
+  .rooms__header {
+    margin: 5% 0;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      text-align: center;
+      font-size: 17px;
+      padding: 1% 15%;
+    }
+  }
+  .contain__rooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 10%;
+  }
+  .testimonials {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+      h1 {
+        font-size: 40px;
+        color: $primary-color;
+        text-transform: capitalize;
+        @media (max-width: 768px) {
+          font-size: 25px;
+        }
+      }
+      p {
+        color: $primary-color;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      .btns {
+        button {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+$primary-color: #14274a;
+$btn-bg-color: #73ace0;
+$white-color: #fff;
+$dark-color: #333;
+$tarnsition: all 0.3s ease;
+
+footer {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    height: 650px;
+    padding: 30% 0;
+    justify-content: flex-start;
+  }
+  &::before {
+    content: "";
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 69px;
+    left: -50%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #14274a;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 13% 4%;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: $white-color;
+      .logo-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          text-transform: uppercase;
+        }
+        p {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .about {
+      color: $white-color;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .social-media {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+          a {
+            color: $white-color;
+            display: flex;
+            align-items: center;
+            p {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+    .subscribe {
+      color: $white-color;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      .input {
+        border: 2px solid $btn-bg-color;
+        input {
+          border: none;
+          outline: none;
+          padding: 10px;
+          background: transparent;
+          color: $white-color;
+        }
+        button {
+          border-radius: 0;
+        }
+        ::placeholder {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

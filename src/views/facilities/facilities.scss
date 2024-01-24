@@ -1,0 +1,25 @@
+$primary-color: #14274a;
+
+.facilities {
+  .facilities-header {
+    margin: 5% 0;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      text-align: center;
+      font-size: 17px;
+      padding: 1% 4%;
+    }
+  }
+  .contain-facility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
